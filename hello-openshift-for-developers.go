@@ -17,7 +17,7 @@ func helloHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func listenAndServe(port string) {
-	fmt.Printf("serving on %s\n", port)
+	fmt.Printf("serving on wtf! %s\n", port)
 	err := http.ListenAndServe(":"+port, nil)
 	if err != nil {
 		panic("ListenAndServe: " + err.Error())
